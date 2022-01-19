@@ -1,0 +1,6 @@
+framework module Pods_DeviceIDFetcher_Tests {
+  umbrella header "Pods-DeviceIDFetcher_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

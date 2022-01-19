@@ -1,0 +1,27 @@
+{
+  "name": "DeviceIDFetcher",
+  "version": "0.1.0",
+  "summary": "A short description of DeviceIDFetcher.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/sameh0/DeviceIDFetcher",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "sameh0": "samehsayed0@hotmail.com"
+  },
+  "source": {
+    "git": "https://github.com/sameh0/DeviceIDFetcher.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "Sources/**/*",
+  "swift_versions": [
+    "5.0",
+    "4.0"
+  ],
+  "swift_version": "5.0"
+}

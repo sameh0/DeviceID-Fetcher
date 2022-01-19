@@ -1,0 +1,16 @@
+PODS:
+  - DeviceIDFetcher (0.1.0)
+
+DEPENDENCIES:
+  - DeviceIDFetcher (from `../`)
+
+EXTERNAL SOURCES:
+  DeviceIDFetcher:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  DeviceIDFetcher: 02dc8867ab390353b34ea8a2b102585b8ce49d88
+
+PODFILE CHECKSUM: 26d6484e41d6979b1a8d0554b2e4130551d6abaf
+
+COCOAPODS: 1.10.2

@@ -1,0 +1,6 @@
+framework module DeviceIDFetcher {
+  umbrella header "DeviceIDFetcher-umbrella.h"
+
+  export *
+  module * { export * }
+}

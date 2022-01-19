@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'DeviceIDFetcher_Example' do
+  pod 'DeviceIDFetcher', :path => '../'
+
+  target 'DeviceIDFetcher_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

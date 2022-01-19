@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="DeviceIDFetcher_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a2c-Gw-zQh">
+                                <rect key="frame" x="167" y="323.5" width="41.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="0Ap-3o-ga9">
+                                <rect key="frame" x="26" y="379" width="323" height="31"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yk7-ch-uBQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="107.5" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Ad ID "/>
+                                        <connections>
+                                            <action selector="onAdvId:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="rmH-ab-jhJ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AWL-3P-4wg">
+                                        <rect key="frame" x="107.5" y="0.0" width="108" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Keychain ID "/>
+                                        <connections>
+                                            <action selector="onKeyChainId:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="flC-1c-xme"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YpS-MA-coy">
+                                        <rect key="frame" x="215.5" y="0.0" width="107.5" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Vendor ID"/>
+                                        <connections>
+                                            <action selector="onDeviceId:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ZVS-N1-PAF"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="0Ap-3o-ga9" firstAttribute="top" secondItem="a2c-Gw-zQh" secondAttribute="bottom" constant="35" id="H8p-Ba-f2z"/>
+                            <constraint firstItem="a2c-Gw-zQh" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="Tsa-gR-1OU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="0Ap-3o-ga9" secondAttribute="trailing" constant="10" id="ecs-Pl-INI"/>
+                            <constraint firstItem="0Ap-3o-ga9" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="10" id="ix0-be-5cd"/>
+                            <constraint firstItem="a2c-Gw-zQh" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="kD2-Sa-kvK"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="a2c-Gw-zQh" id="Ng6-YZ-Yix"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="23" y="111"/>
+        </scene>
+    </scenes>
+</document>
